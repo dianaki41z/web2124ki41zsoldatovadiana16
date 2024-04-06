@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager's Business Card</title>
+<style>
+  body {
+    background-color: #ffe6e6; /* Light pink background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  .container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff; /* White card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+  }
+  h1, p {
+    text-align: center;
+    color: #333333; /* Dark gray text color */
+  }
+  .role {
+    text-align: center;
+    color: #808080; /* Light gray text color */
+    font-style: italic;
+    margin-top: 5px;
+  }
+  form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  input[type="text"], input[type="submit"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  input[type="submit"] {
+    background-color: #ff80bf; /* Pink submit button */
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="center">
+  <div class="container">
+    <h1>Soldatova Diana</h1>
+    <p>+38 097 037 1420</p>
+    <p>soldatovadiana@gmail.com</p>
+    <p class="role">Manager</p>
+
+    <form action="submit.php" method="POST">
+      <label for="message">Send me a message:</label><br>
+      <input type="text" id="message" name="message" placeholder="Your message"><br>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
